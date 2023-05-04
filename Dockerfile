@@ -1,2 +1,1 @@
-FROM httpd:1.0 
-EXPOSE 80
+
