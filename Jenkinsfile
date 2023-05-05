@@ -12,8 +12,6 @@ pipeline {
                 sh 'docker build -t docker .'
                 sh 'docker tag docker:latest 260710909108.dkr.ecr.us-east-2.amazonaws.com/docker:latest'
                 sh 'docker push 260710909108.dkr.ecr.us-east-2.amazonaws.com/docker:latest'
-                #sh 'docker build -t httpd:latest . '
-                #sh 'docker run -d --name httpd -p 80:80 httpd:latest'
             } 
         }
     }
